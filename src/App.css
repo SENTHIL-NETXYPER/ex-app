@@ -1,0 +1,49 @@
+:root {
+  --navbar-height: 60px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  height: var(--navbar-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.main-content,
+.home-content,
+.login-content,
+.register-content {
+  margin-top: calc(var(--navbar-height) + 20px); /* Adjust dynamically */
+  padding: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f4f7fc;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Center content vertically and horizontally */
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
